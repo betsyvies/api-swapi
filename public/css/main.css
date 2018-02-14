@@ -1,0 +1,122 @@
+/* Gobal */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  font-family: 'Bitter', serif;
+  color: #FFFFFF;
+  font-size: 2rem;
+  background: linear-gradient(to bottom right, #339a99, #62c899);
+}
+
+/* Style for header */
+
+.splash{
+  text-align: center;
+  background: linear-gradient(to bottom right, #339a99, #62c899);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left:0;
+}
+
+.splash h1{
+  width: 90vw;;
+}
+
+.line{
+  outline: 1px solid red;
+}
+
+.principal{
+  background: linear-gradient(to bottom right, #ffffff, #d9edec);
+
+  color:#7bb7bb;
+}
+
+.name{
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.navbar-default .navbar-nav > li > a{
+  color: #7bb7bb;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: #7bb7bb;
+}
+
+img[alt="Brand"]{
+  height: 7vw;
+}
+
+img[alt="carro"]{
+  height: 50vh;
+  width: 50vw;
+}
+
+/* Style for form */
+
+section{
+  color: white;
+}
+
+section h1{
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+}
+
+.btn-route{
+  margin-top: 2rem;
+  margin-right: 2rem;
+  color:#7bb7bb;
+  border: 2px solid white;
+  padding: 2rem;
+}
+
+.btn-route:hover{
+  background: linear-gradient(to bottom right, #ffffff, #d9edec);
+}
+
+.map{
+  border: 1px solid white;
+  width: 100%;
+  height: 300px;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Style for footer */
+
+footer{
+  background-color: #373b47;
+  width: 100%;
+  padding-left: 10rem;
+  padding: 1rem;
+}
+
+/* Media query */
+
+@media (min-width: 992px){
+  img[alt="Brand"]{
+    height: 3vw;
+  }
+
+  .name{
+    margin-top: 20px;
+  }
+
+  footer{
+    height: 8vh;
+  }
+}
