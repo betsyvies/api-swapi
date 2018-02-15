@@ -51,7 +51,7 @@ function begin() {
 
         photo.forEach(function(element) {
           // console.log(photo.media);
-          $containerImages.append(`<div class="col-xs-3 col-md-3 col-lg-3">
+          $containerImages.append(`<div class="col-xs-6 col-md-4 col-lg-3">
           <a href="" data-toggle="modal" data-target="#modalImages">
           <img src="${element.media.m}" alt="img1" class="img-responsive images" data-birth="${birth}" data-gender="${gender}"
           data-skin="${skin}" data-height="${height}" data-mass="${mass}" data-hair"${hair} data-name="${name}" data-img="${element.media.m}">
