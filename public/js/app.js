@@ -1,7 +1,6 @@
 function begin() {
   const $buttonImages = $('#button-images');
   const $containerImages = $('#container-img');
-  const $dataModal = $('a[data-toggle=modal]');
   
   $buttonImages.on('click', function(e) {
     e.preventDefault();
@@ -55,31 +54,35 @@ function begin() {
           $containerImages.append(`<div class="col-xs-3 col-md-3 col-lg-3">
           <a href="" data-toggle="modal" data-target="#modalImages">
           <img src="${element.media.m}" alt="img1" class="img-responsive images" data-birth="${birth}" data-gender="${gender}"
-          data-skin="${skin}" data-height="${height}" data-mass="${mass}" data-hair"${hair} data-name="${name}">
+          data-skin="${skin}" data-height="${height}" data-mass="${mass}" data-hair"${hair} data-name="${name}" data-img="${element.media.m}">
           </a>
         </div>`);
+        });
+        const $dataModal = $('#container-img a[data-toggle=modal]');
+        
+        /* Al darle click a la imagen se mostrará un modal con la información*/
+        $dataModal.on('click', function() {
+          let dataImg = $(this).children().attr('data-img'); 
+          let dataName = $(this).children().attr('data-name');
+          let dataBirth = $(this).children().attr('data-birth');
+          let dataGender = $(this).children().attr('data-gender');
+          let dataSkin = $(this).children().attr('data-skin');
+          let dataHeight = $(this).children().attr('data-height');
+          let dataMass = $(this).children().attr('data-mass');
+          let dataHair = $(this).children().attr('data-hair');
+
+          $($(this).data('target') + ' .modal-header img ').attr('src', dataImg);
+          $($(this).data('target') + ' .modal-header h1').text(dataName);
+          $($(this).data('target') + ' .modal-body #birth').text('Birth: ' + dataBirth);
+          $($(this).data('target') + ' .modal-body #gender').text('Gender: ' + dataGender);
+          $($(this).data('target') + ' .modal-body #skin').text('Skin: ' + dataSkin);
+          $($(this).data('target') + ' .modal-body #height').text('Height' + dataHeight);
+          $($(this).data('target') + ' .modal-body #mass').text('Mass: ' + dataMass);
+          $($(this).data('target') + ' .modal-body #hair').text('Hair ' + dataHair);
         });
       };
 
       $.getJSON(flickrApi, flickrOptions, renderPhotos);
-      /* Al darle click a la imagen se mostrará un modal con la información*/
-      $dataModal.on('click', function() {
-        let dataName = $(this).children().attr('data-name');
-        let dataBirth = $(this).children().attr('data-birth');
-        let dataGender = $(this).children().attr('data-gender');
-        let dataSkin = $(this).children().attr('data-skin');
-        let dataHeight = $(this).children().attr('data-height');
-        let dataMass = $(this).children().attr('data-mass');
-        let dataHair = $(this).children().attr('data-hair');
-            
-        $($(this).data('target') + ' .modal-header h1').text(dataName);
-        $($(this).data('target') + ' .modal-body #birth').text(dataBirth);
-        $($(this).data('target') + ' .modal-body #gender').text(dataGender);
-        $($(this).data('target') + ' .modal-body #skin').text(dataSkin);
-        $($(this).data('target') + ' .modal-body #height').text(dataHeight);
-        $($(this).data('target') + ' .modal-body #mass').text(dataMass);
-        $($(this).data('target') + ' .modal-body #hair').text(dataHair);
-      });
     });
   }
   

@@ -27,3 +27,13 @@ body {
   height: 15rem;
   margin-bottom: 2rem;
 }
+
+/* Style for Modal */
+
+[alt="img-modal"] {
+  width: 100%;
+}
+
+.container-text {
+  color: #000;
+}
