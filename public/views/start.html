@@ -46,8 +46,44 @@
     <div id="container-img" class="col-xs-12 col-lg-12 container-images">
     </div>
   </section>
+  <!-- Modal for Images -->
+  <div class="modal fade" id="modalImages" tabindex="-1" role="dialog" aria-labelledby="modalImages">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content background-modal center-block">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span -hidden="true">&times;</span>
+          </button>
+          <h1 id="title"></h1>
+        </div>
+        <div class="modal-body background-modal-body">
+          <div class="form-group row">
+            <div class="col-xs-6 container-text ">
+              <p id="birth"></p>
+            </div>
+            <div class="col-xs-6 container-text ">
+              <p id="gender"></p>
+            </div>
+            <div class="col-xs-6 container-text ">
+              <p id="skin"></p>
+            </div>
+            <div class="col-xs-6 container-text ">
+              <p id="height"></p>
+            </div>
+            <div class="col-xs-6 container-text ">
+              <p id="mass"></p>
+            </div>
+            <div class="col-xs-6 container-text ">
+              <p id="hair"></p>
+            </div>
+          </div>
+          <button class="btn btn-default center-block color-button" type="submit">Pedir ahora</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <!-- Import jQuery and Bootstrap.js --> 
+  <!-- Import jQuery and Bootstrap.js -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="../js/app.js"></script>
