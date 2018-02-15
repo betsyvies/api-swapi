@@ -17,30 +17,43 @@ body {
   height: 100vh;
 }
 
-
-.splash{
-  text-align: center;
-  background-size: cover;
-  background-image: url(../assets/imgs/fondo.jpg);
-  background-position: center center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  z-index: 1000;
-  position: fixed;
-  top: 0;
-  left:0;
+.container-flex-row {
+	display: flex;
+	justify-content: space-between;
 }
 
-.splash h1{
-  width: 90vw;;
+.container-flex-column {
+  display: flex;
+	flex-direction:column;
+  justify-content: center;
+	padding: 2em;
 }
 
 .first{
-  margin: 5px;
+  padding: 10px;
+}
+
+hr{
+  width: 100%;
+  color: tomato;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.icon{
+  color:tomato;
+}
+
+#gifs{
+  background: transparent;
+  border-color:tomato;
+  color:white;
+}
+
+#emojis{
+  background: transparent;
+  border-color:tomato;
+  color:white;
 }
 
 footer{
@@ -48,6 +61,8 @@ footer{
   width: 100%;
   padding-left: 10rem;
   padding: 1rem;
+  position: absolute;
+  bottom: 0;
 }
 
 @media (min-width: 992px){

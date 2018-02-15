@@ -1,4 +1,5 @@
-// vista splash
-$(document).ready(() => {
-    $('.splash').delay(2000).fadeOut('slow');
+$(document).ready(function () {
+  setTimeout(function () {
+    window.location.href = 'views/start.html';
+  }, 2000);
 });
