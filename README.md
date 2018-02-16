@@ -49,7 +49,11 @@ ___
 
 ![StarwarsSplash](public/assets/images/readme/vista-img.png)
 
-4. Modal:
+4. Gifs:
+
+![StarwarsSplash](public/assets/images/readme/vista-gif.png)
+
+5. Modal:
 
 ![StarwarsSplash](public/assets/images/readme/vista-modal.png)
 
