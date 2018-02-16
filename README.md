@@ -1,6 +1,6 @@
 # SWAPI
 
-## Objetivo:  
+## Objetivo:
 
 - El objetivo de esta pagina es mostrar imagenes de los personajes de Starwars y sus datos en un modal. 
 
