@@ -1,3 +1,11 @@
+/* Style for global */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Bitter', serif;
   color: #FFFFFF;
@@ -6,6 +14,15 @@ body {
   width: 100%;
   height: 100vh;
 }
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style for start */
+
 .container-flex-row {
   display: flex;
   justify-content: space-between;
@@ -26,6 +43,11 @@ body {
   width: 100%;
   height: 15rem;
   margin-bottom: 2rem;
+}
+
+.text-title {
+  color: #ebda1d;
+  text-align: center;
 }
 
 /* Style for Modal */

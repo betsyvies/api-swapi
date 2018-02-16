@@ -63,10 +63,10 @@ function begin() {
       const hair = element.hair_color;
 
       /* API para imagenes */
-      var xhr = $.get(`http://api.giphy.com/v1/gifs/search?q=${name}&api_key=OSe4zJXxbqnnpvX8gu03uha3zOLXK5Lq`);
+      var xhr = $.get(`https://api.giphy.com/v1/gifs/search?q=${name}&api_key=OSe4zJXxbqnnpvX8gu03uha3zOLXK5Lq`);
       xhr.done(function(data) { 
         console.log(data); 
-        const img = data.data[5].images['480w_still'].url;
+        const img = data.data[2].images['480w_still'].url;
 
         $containerImages.append(`<div class="col-xs-6 col-md-4 col-lg-3">
           <a href="" data-toggle="modal" data-target="#modalImages">
@@ -115,7 +115,7 @@ function begin() {
       const hair = element.hair_color;
 
       /* API para gifs */
-      var xhr = $.get(`http://api.giphy.com/v1/gifs/search?q=${name}&api_key=OSe4zJXxbqnnpvX8gu03uha3zOLXK5Lq`);
+      var xhr = $.get(`https://api.giphy.com/v1/gifs/search?q=${name}&api_key=OSe4zJXxbqnnpvX8gu03uha3zOLXK5Lq`);
       xhr.done(function(data) { 
         console.log(data); 
         const gif = data.data[1].images.fixed_height_downsampled.url;
