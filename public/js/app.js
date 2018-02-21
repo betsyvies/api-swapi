@@ -68,7 +68,7 @@ function begin() {
         console.log(data); 
         const img = data.data[2].images['480w_still'].url;
 
-        $containerImages.append(`<div class="col-xs-6 col-md-4 col-lg-3">
+        $containerImages.append(`<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
           <a href="" data-toggle="modal" data-target="#modalImages">
           <img src="${img}" alt="img1" class="img-responsive images" data-birth="${birth}" data-gender="${gender}"
           data-skin="${skin}" data-height="${height}" data-mass="${mass}" data-hair"${hair} data-name="${name}" data-img="${img}">
@@ -120,7 +120,7 @@ function begin() {
         console.log(data); 
         const gif = data.data[1].images.fixed_height_downsampled.url;
 
-        $containerImages.append(`<div class="col-xs-6 col-md-4 col-lg-3">
+        $containerImages.append(`<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
           <a href="" data-toggle="modal" data-target="#modalImages">
           <img src="${gif}" alt="img1" class="img-responsive images" data-birth="${birth}" data-gender="${gender}"
           data-skin="${skin}" data-height="${height}" data-mass="${mass}" data-hair"${hair} data-name="${name}" data-img="${gif}">
