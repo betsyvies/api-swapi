@@ -2,7 +2,7 @@
 
 El objetivo de esta pagina es mostrar imagenes divertidas de los personajes de Starwars y sus datos en un modal.
 
-![portada-sawapi](https://user-images.githubusercontent.com/30939075/36357266-a2d87042-14c9-11e8-81fc-ddec2d301f08.png)
+![portada-sawapi](https://user-images.githubusercontent.com/30939075/36491399-aa50618c-16f8-11e8-82ad-5088a661f1d9.png)
 
 ## Desarrollado para 
 
